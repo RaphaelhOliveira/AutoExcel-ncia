@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="empresa.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <h2>Login</h2>
+                <p>Bem-vindo de volta!</p>
+            </div>
+            
+            <form class="login-form">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        placeholder="seu@email.com"
+                        required
+                    >
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        placeholder="Sua senha"
+                        required
+                    >
+                </div>
+                
+                <div class="options">
+                    <label class="remember">
+                        <input type="checkbox">
+                        Lembrar-me
+                    </label>
+                    <a href="#" class="forgot-password">Esqueci a senha</a>
+                </div>
+                
+                <button type="submit" class="login-btn">Entrar</button>
+            </form>
+            
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
