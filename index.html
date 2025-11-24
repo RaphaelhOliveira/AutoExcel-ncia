@@ -3,53 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
+    <title>AutoExcelência - Venda de Carros</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-box">
-            <div class="login-header">
-                <h2>Login</h2>
-                <p>Bem-vindo de volta!</p>
-            </div>
-            
-            <form class="login-form">
-                <div class="input-group">
-                    <label for="email">E-mail</label>
-                    <input 
-                        type="email" 
-                        id="email" 
-                        placeholder="seu@email.com"
-                        required
-                    >
+    <header>
+        <div class="container">
+            <h1>AutoExcelência</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#carros">Carros</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Encontre o carro dos seus sonhos</h2>
+            <p>Os melhores veículos com qualidade e excelência</p>
+            <a href="#carros" class="btn">Ver Carros</a>
+        </div>
+    </section>
+
+    <section id="carros" class="carros">
+        <div class="container">
+            <h2>Nossa Frota</h2>
+            <div class="carros-grid">
+                <div class="carro-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Carro 1">
+                    <h3>SUV Premium 2023</h3>
+                    <p>R$ 120.000,00</p>
+                    <button class="btn">Ver Detalhes</button>
                 </div>
-                
-                <div class="input-group">
-                    <label for="password">Senha</label>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        placeholder="Sua senha"
-                        required
-                    >
+                <div class="carro-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Carro 2">
+                    <h3>Sedan Executivo 2024</h3>
+                    <p>R$ 95.000,00</p>
+                    <button class="btn">Ver Detalhes</button>
                 </div>
-                
-                <div class="options">
-                    <label class="remember">
-                        <input type="checkbox">
-                        Lembrar-me
-                    </label>
-                    <a href="#" class="forgot-password">Esqueci a senha</a>
+                <div class="carro-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Carro 3">
+                    <h3>Hatch Esportivo 2023</h3>
+                    <p>R$ 85.000,00</p>
+                    <button class="btn">Ver Detalhes</button>
                 </div>
-                
-                <button type="submit" class="login-btn">Entrar</button>
-            </form>
-            
-            <div class="register-link">
-                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre a AutoExcelência</h2>
+            <p>Há mais de 15 anos no mercado, a AutoExcelência oferece os melhores veículos com qualidade garantida e atendimento personalizado.</p>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Sua mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AutoExcelência. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
